@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basketball socre keeper</title>
+  <link rel="stylesheet" href="score keeper.css" />
+</head>
+
+<body>
+  <section class="section1">
+    <img src="../pics/sepctator.jpg" alt="" id="sepctator" />
+    <img src="../pics/jordan.jpg" alt="" id="jordan" />
+    <img src="../pics/basketball.jpg" alt="" id="basketball" />
+  </section>
+
+  <!-- <section class="section2">
+      <div class="banner">
+        <video autoplay loop muted>
+          <source src="../pics/Drose.mp4" type="video/mp4" />
+        </video>
+        <div class="videoContent">
+          <h2>Where Miracle Happens</h2>
+        </div>
+      </div>
+    </section> -->
+
+
+  <h1>Welcome to today's match</h1>
+  <section class="section2">
+    <form class="teamselection">
+      <div class="teampic">
+        <div class="teampic1">
+          <img src="" alt="" />
+        </div>
+        <div class="teampic2">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div class="teams">
+        <div class="team1">
+          <div class="card1">
+            <img src="../pics/home.png" class="" alt="..." />
+            <div class="card-body1">
+              <label for="selectTeam1" class="labelTeam1">Select Team 1</label>
+              <br />
+              <select name="" class="selectTeam1" id="selectTeam1">
+                <option value="" id=""></option>
+                <option value="../pics/bulls.pic.jpg" id="bulls">Bulls</option>
+                <option value="../pics/lakers.pic.jpg" id="lakers">Lakers</option>
+                <option value="../pics/bucks.pic.jpg" id="bucks">Bucks</option>
+                <option value="../pics/cav.pic.jpg" id="cavaliers">Cavaliers</option>
+                <option value="../pics/celtics.pic.jpg" id="celtics">Celtics</option>
+                <option value="../pics/pistons.pic.jpg" id="pistions">Pistons</option>
+                <option value="../pics/nuggets.jpg" id="nuggets">Nuggets</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="vs">vs</div>
+
+        <div class="team2">
+          <div class="card2">
+            <img src="../pics/guest.png" class="card-img-top" alt="..." />
+            <div class="card-body2">
+              <label for="selectTeam2" class="labelTeam2">Select Team 2</label>
+              <br />
+              <select name="selectTeam2" class="selectTeam2" id="selectTeam2">
+                <option value="" id=""></option>
+                <option value="../pics/bulls.pic.jpg" id="bulls">Bulls</option>
+                <option value="../pics/lakers.pic.jpg" id="lakers">Lakers</option>
+                <option value="../pics/bucks.pic.jpg" id="bucks">Bucks</option>
+                <option value="../pics/cav.pic.jpg" id="cavaliers">Cavaliers</option>
+                <option value="../pics/celtics.pic.jpg" id="celtics">Celtics</option>
+                <option value="../pics/pistons.pic.jpg" id="pistions">Pistons</option>
+                <option value="../pics/nuggets.jpg" id="nuggets">Nuggets</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="formSubmit">Let's GO!!!!</button>
+    </form>
+    <div class="logo"></div>
+  </section>
+
+  <section class="section3">
+    <div class="bg">
+    <div class="left">
+      <img src="" alt="">
+    </div>
+    <div class="right">
+      <img src="" alt="">
+    </div>
+  </div>
+    <div class="scoreboard">
+      <div class="team-score1">
+        <h2 class="team-name1">Team A</h2>
+        <div class="score" id="scoreA">0</div>
+        <div class="buttons">
+          <button class="add1A" disabled>+1</button>
+          <button class="add2A" disabled>+2</button>
+          <button class="add3A" disabled>+3</button>
+        </div>
+      </div>
+
+      <div class="border">
+        <div class="period-display">Period: 1</div>
+        <div class="timer">00:00</div>
+        <button class="start"> Start</button>
+        <button class="reset"> Reselect</button>
+      </div>
+      
+      <div class="team-score2">
+        <h2 class="team-name2">Team B</h2>
+        <div class="score" id="scoreB">0</div>
+        <div class="buttons">
+          <button class="add1B" disabled>+1</button>
+          <button class="add2B" disabled>+2</button>
+          <button class="add3B" disabled>+3</button>
+        </div>
+      </div>
+      
+    </div>
+    
+   
+  </section>
+  <script src="./basketball score keeper.js"></script>
+</body>
+
+</html>

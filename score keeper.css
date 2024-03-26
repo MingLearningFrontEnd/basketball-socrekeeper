@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: serif;
+    background-color: #0d0d0e;
+}
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.section1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0d0d0e, transparent);
+    z-index: 10000;
+}
+
+
+.section1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    display: inline;
+}
+
+#jodran {
+    z-index: 2;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 70px;
+    color: #ffa260;
+    background-color: black;
+
+}
+
+.section2 {
+    background-image: url(../pics/Court.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+
+}
+
+
+.teampic {
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+}
+
+.teampic .teampic1,
+.teampic .teampic2 {
+
+    flex-basis: 50%;
+    border-radius: 10px;
+}
+
+.teampic1 img,
+.teampic2 img {
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.teams {
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.team1 .card1,
+.team2 .card2 {
+    background-color: white;
+    border-radius: 10%;
+    font-size: 30px;
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.5);
+    padding-bottom: 50px;
+    transition: 1s;
+}
+
+.team1 .card1:hover,
+.team2 .card2:hover {
+    transform: scale(1.05);
+}
+
+.team1 .card1 img,
+.team2 .card2 img {
+    width: 80%;
+}
+
+.team1 .card1 select,
+.team2 .card2 select {
+    width: 50%;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700;
+
+}
+
+.teamselection .vs {
+
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 350px;
+    color: white
+}
+
+.formSubmit {
+    background-color: black;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 100; */
+}
+
+.formSubmit:hover {
+    border-color: #f1ff5c;
+    color: #f1ff5c;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+
+}
+
+.logo {
+    margin-top: 10px;
+    position: relative;
+    height: 200px;
+    background-image: url(../pics/NBA_on_TNT_logo_2017.svg);
+    /* object-fit: cover; */
+}
+
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-family: Impact, fantasy;
+
+}
+
+
+.bg {
+    display: flex;
+
+}
+
+.bg .left,
+.bg .right {
+    flex-basis: 50%;
+
+}
+
+.bg .left img,
+.bg .right img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0;
+}
+
+.scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    color: #0d0d0e;
+    margin: 200px auto;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    background-color: rgba(232, 226, 219, 0.9);
+    transition: all 1s;
+}
+
+.scoreboard:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+
+}
+
+.border {
+    padding: 5px;
+    height: 50px;
+    line-height: 40px;
+    border: 1px solid black;
+}
+
+.period-display {
+    font-size: 35px;
+    font-weight: 700;
+    flex: 1 1;
+}
+
+.timer {
+    margin-top: 80px;
+    font-size: 100px;
+    flex: 1 1
+}
+
+.team-name1,
+.team-name2 {
+    font-size: 48px;
+
+}
+
+.score {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section3 button {
+    margin-top: 70px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+
+}
+
+.section3 button:hover {
+    background-color: #0056b3;
+}
